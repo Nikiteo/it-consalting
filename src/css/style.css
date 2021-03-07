@@ -162,9 +162,8 @@ select {
 }
 
 .main_section {
-  width: 50%;
   margin: 0 auto;
-  padding: 10rem 0 2rem 0;
+  padding: 10% 5% 2% 5%;
 
   text-transform: uppercase;
   color: #fff;
@@ -173,7 +172,7 @@ select {
 .main_section_title {
   font-size: 4rem;
   font-weight: bold;
-  padding: 2rem;
+  padding: 0 0 2rem 0;
 }
 
 .main_section_text {
@@ -197,7 +196,7 @@ select {
   justify-content: center;
   align-items: center;
   
-  margin: 4rem 10rem;
+  margin: 5% 10%;
 }
 
 .services_title,

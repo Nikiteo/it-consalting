@@ -224,7 +224,8 @@ select {
     transition: all .1s linear;
 }
 
-.service_article:hover {
+.service_article:hover,
+.marketplace_article:hover {
   transform: scale(1.1);
 }
 
