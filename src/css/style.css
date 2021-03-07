@@ -1,0 +1,185 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-width: 1230px;
+    background-image: url('../../src/img/transformation.jpg');
+    background-color: #000;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-size: 1.1rem;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.header__wrapper {
+    position: relative;
+    margin: 0 2rem;
+    z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation_menu {
+  display: flex;
+}
+
+.navigation_menu_item:not(:first-child) {
+  margin: 0 0 0 2rem;
+}
+
+.navigation_menu_item__link {
+  display: flex;
+  position: relative;
+
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation_menu_item__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #40cfff;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.1s linear;
+}
+
+.navigation_menu_item__link:hover {
+  color: #40cfff;
+}
+
+.navigation_menu_item__link:hover:after {
+  opacity: 1;
+}
+
+.main_section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_section {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10rem 0 2rem 0;
+
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main_section_title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+  padding: 2rem;
+}
+
+.main_section_text {
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+
