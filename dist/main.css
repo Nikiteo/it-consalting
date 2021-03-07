@@ -162,8 +162,8 @@ select {
 }
 
 .main_section {
-  margin: 0 auto;
-  padding: 10% 5% 2% 5%;
+  width: 60%;
+  margin: 8rem auto;
 
   text-transform: uppercase;
   color: #fff;
@@ -178,6 +178,7 @@ select {
 .main_section_text {
   line-height: 2rem;
   font-size: 2rem;
+  text-align: center;
 }
 
 /* Services */
