@@ -74,7 +74,7 @@ select {
     position: relative;
     width: 100%;
     height: 100vh;
-    min-width: 1230px;
+    /* min-width: 1230px; */
     background-image: url('../../src/img/transformation.jpg');
     background-color: #000;
     background-position: center center;
@@ -173,7 +173,6 @@ select {
 .main_section_title {
   font-size: 4rem;
   font-weight: bold;
-  line-height: 6rem;
   padding: 2rem;
 }
 
@@ -182,4 +181,81 @@ select {
   font-size: 2rem;
 }
 
+/* Services */
+.services,
+.marketplaces {
+  display: flex;
 
+  height: 100vh;
+  width: 100%;
+}
+
+.services_wrapper,
+.marketplaces_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 4rem 10rem;
+}
+
+.services_title,
+.marketplaces_title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 3rem 0;
+}
+
+.services_items,
+.marketplaces_items {
+  display: flex;
+}
+
+.service_article,
+.marketplace_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transform: scale(1);
+    transition: all .1s linear;
+}
+
+.service_article:hover {
+  transform: scale(1.1);
+}
+
+.service_article:not(:last-child),
+.marketplace_article:not(:last-child) {
+  margin: 0 4rem 0 0;
+}
+
+.services_article_image,
+.marketplace_article_image {
+  margin: 0 0 1rem 0;
+}
+
+.service_article_title,
+.marketplace_article_title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.services_article_text,
+.marketplace_article_text {
+  text-align: justify;
+}
+
+/* Marketplaces */
+.marketplaces_items {
+  align-items: baseline;
+}
+
+.marketplace_article_image {
+  width: 20rem;
+}
