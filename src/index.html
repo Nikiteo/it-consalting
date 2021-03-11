@@ -44,7 +44,7 @@
             <div class="main_section">
                 <div class="main_section_wrapper">
                     <h1 class="main_section_title">
-                        Marketrace.ru
+                        <span class="logo_span">Market</span>race.ru
                     </h1>
                     <div class="main_section_text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque perspiciatis in nulla reiciendis quas labore, ratione voluptatum autem id. Debitis illum id reiciendis omnis voluptatibus consequatur facere quis ipsam?
@@ -141,8 +141,25 @@
                     <a href="tel:799999999" class="contacts_phone_link">+ 7 999 999 99 99</a>
                 </div>
             </div>
-            <div class="contacts_form">
-                
+            <div class="contacts_forms">
+                <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+                    <div class="contact-form__input-wrapper">
+                      <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+                      <div class="contact-form__error contact-form__error_name"></div>
+                    </div>
+                               
+                    <div class="contact-form__input-wrapper">
+                      <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+                      <div class="contact-form__error contact-form__error_tel"></div>
+                    </div>
+                   
+                    <div class="contact-form__input-wrapper"> 
+                       <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите ваш email">
+                       <div class="contact-form__error contact-form__error_email"></div>
+                    </div>
+                   
+                    <button class="contact-form__button" type="submit">Обсудить проект</button>
+                  </form>
             </div>
         </div>
     </section>
