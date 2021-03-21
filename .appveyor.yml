@@ -1,6 +1,6 @@
 image: Ubuntu1804  # образ для сборки
 
-stack: node 10  # окружение
+stack: node 12  # окружение
 
 branches:
   only:
@@ -18,3 +18,10 @@ build_script:
 
 test_script:
   - npm run lint  # скрипт тестирования
+
+deploy_script: # скрипт развёртывания
+- git config --global credential.helper store
+- git config --global user.name Nikiteo
+- git config --global user.email zhigiley.nikita2012@yandex.ru
+- ps: Set-Content -Path "$HOME\.git-credentials" -Value "https://$($env:access_token):x-oauth-basic@github.com`n" -NoNewline
+- npx push-dir --dir=dist --branch=gh-pages --force --verbose
