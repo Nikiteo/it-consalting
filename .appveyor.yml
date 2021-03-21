@@ -8,6 +8,10 @@ branches:
 
 cache: node_modules  # кеширование
 
+environment:
+  access_token:
+    secure: OZg9+VKt3YNP7o50iMe8UYIUu6xmFZtQtcYvaOm08FCzn4OlVRk8ARQXDk8RxJXU
+
 install:
   - npm install  # команда установки зависимостей
 
