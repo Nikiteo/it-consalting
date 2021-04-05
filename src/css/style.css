@@ -942,6 +942,10 @@ input:focus:-ms-input-placeholder {
 
 @media (max-width: 680px) {
 
+  .header__wrapper {
+    margin: 0 1rem;
+  }
+
   .about_wrapper {
     margin: 3rem 2rem;
   }
@@ -981,7 +985,7 @@ input:focus:-ms-input-placeholder {
   }
 
   .services_wrapper {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   .services_item {
@@ -1025,6 +1029,7 @@ input:focus:-ms-input-placeholder {
 
   .main_section_text {
     font-size: 1.3rem;
+    margin: 0 1rem;
   }
 
   .contacts_title,
@@ -1044,6 +1049,10 @@ input:focus:-ms-input-placeholder {
   .dropdown_list_exp,
   .dropdown_list_diff {
     padding: 0 0 0 2rem;
+  }
+
+  .contact-form {
+    font-size: 0.8rem;
   }
 
 }
