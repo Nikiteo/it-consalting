@@ -964,6 +964,7 @@ input:focus:-ms-input-placeholder {
 
   .main_section_text {
     font-size: 1.4rem;
+    margin: 0 1rem;
   }
 
   .about_article {
@@ -1055,6 +1056,15 @@ input:focus:-ms-input-placeholder {
     font-size: 0.8rem;
   }
 
+  .arrow_down_new,
+  .arrow_down_exp,
+  .arrow_down_diff,
+  .arrow_up_new,
+  .arrow_up_exp,
+  .arrow_up_diff {
+    min-width: 1.3rem;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -1075,15 +1085,6 @@ input:focus:-ms-input-placeholder {
   .dropdown_list_exp,
   .dropdown_list_diff {
     padding: 0 0 0 1rem;
-  }
-
-  .arrow_down_new,
-  .arrow_down_exp,
-  .arrow_down_diff,
-  .arrow_up_new,
-  .arrow_up_exp,
-  .arrow_up_diff {
-    min-width: 1.3rem;
   }
 
   .services_items_new,
