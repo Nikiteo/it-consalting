@@ -1,7 +1,36 @@
+/* eslint-disable no-unused-vars */
+// import Swiper JS
+import Swiper from 'swiper/bundle';
+// import Swiper styles
+import 'swiper/swiper-bundle.css';
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   const swiper = new Swiper('.swiper-container', {
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//   });
+// });
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 const dropDownNew = document.querySelector('.dropdown_list_new');
 const listNew = document.querySelector('.services_items_new');
 const arrowUp = document.querySelector('.arrow_up_new');
 const arrowDown = document.querySelector('.arrow_down_new');
+
 dropDownNew.addEventListener('click', (e) => {
   if (listNew.classList.contains('services_items__active')) {
     if (e.target.parentElement.classList.contains('arrow_up_new')) {
@@ -129,4 +158,16 @@ burgerBtnClose.addEventListener('click', (e) => {
   }
   burgerBtnOpen.classList.remove('hide');
   document.body.style.overflow = 'auto';
+});
+
+const modalMenuList = document.querySelector('.modal_menu_list').children;
+
+modalMenuList.forEach((element) => {
+  element.addEventListener('click', () => {
+    modalWindow.classList.remove('modal_menu_burger_active');
+    for (let i = 0; i < modalItems.length; i += 1) {
+      modalItems[i].classList.remove('modal_menu_item_active');
+    }
+    document.body.style.overflow = 'auto';
+  });
 });
